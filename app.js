@@ -135,3 +135,62 @@ document.addEventListener('DOMContentLoaded', () => {
                     testimonialCard.classList.add('fade-in');
                 }, 300);
     }
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const successModal = document.getElementById('successModal');
+    const modalCloseBtn = document.getElementById('modalCloseBtn');
+    const modalOkBtn = document.getElementById('modalOkBtn');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const email = document.getElementById('formEmail').value;
+            const website = document.getElementById('formWebsite').value || 'არ არის მითითებული';
+            const message = document.getElementById('formMessage').value;
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
+            try {
+                const response = await fetch('https://jsonplaceholder.typicode.com/users', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        website: website,
+                        message: message
+                    })
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    console.log('Submission Success:', data);
+                    
+                    successModal.classList.add('open');
+                    
+                    contactForm.reset();
+                } else {
+                    alert('გაგზავნისას დაფიქსირდა შეცდომა. გთხოვთ სცადოთ მოგვიანებით.');
+                }
+            } catch (error) {
+                console.error('Submission Error:', error);
+                alert('ქსელის შეცდომა. გთხოვთ შეამოწმოთ ინტერნეტთან კავშირი.');
+            } finally {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        });
+    }
+    if (successModal) {
+        const closeModal = () => {
+            successModal.classList.remove('open');
+        };
+        if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+        if (modalOkBtn) modalOkBtn.addEventListener('click', closeModal);
+        successModal.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                closeModal();
+            }
+        });
+    }
+});
