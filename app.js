@@ -43,3 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
             heroSlides[currentHeroSlide].classList.add('active');
         }, 5000);
     }
+    const skillsSection = document.getElementById('skillsSection');
+    const progressFills = document.querySelectorAll('.progress-fill');
+    if (skillsSection && progressFills.length > 0) {
+        const observerOptions = {
+            root: null,
+            threshold: 0.15
+        };
+        const skillsObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    progressFills.forEach(fill => {
+                        const targetWidth = fill.getAttribute('data-width');
+                        fill.style.width = targetWidth;
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        skillsObserver.observe(skillsSection);
+    }
