@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #FD6F00;
+    --primary-hover: #e06200;
+    --bg-dark: #1E1E1E;
+    --bg-deep: #121212;
+    --bg-card-light: #F8F8F8;
+    --text-white: #FFFFFF;
+    --text-grey: #A3A3A3;
+    --text-dark: #333333;
+    --border-color: #444444;
+    
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    --container-max-width: 1200px;
+    --border-radius-sm: 6px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 24px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
