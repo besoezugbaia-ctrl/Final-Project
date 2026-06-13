@@ -394,7 +394,7 @@ img {
 }
 .progress-fill {
     height: 100%;
-    width: 0%; /* JS will update this on scroll */
+    width: 0%;
     background-color: var(--primary-color);
     border-radius: var(--border-radius-sm);
     transition: width 1.5s cubic-bezier(0.1, 0.8, 0.3, 1);
@@ -411,4 +411,58 @@ img {
     border-radius: 50%;
     background-color: var(--text-white);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.services-section {
+    padding: 100px 0;
+    background-color: var(--bg-deep);
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.service-card {
+    background-color: var(--bg-card-light);
+    color: var(--text-dark);
+    padding: 40px 24px;
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: var(--box-shadow);
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(253, 111, 0, 0.15);
+    background-color: #ffffff;
+}
+.service-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    background-color: rgba(253, 111, 0, 0.08);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-normal);
+}
+.service-card:hover .service-icon {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+.service-icon svg {
+    width: 28px;
+    height: 28px;
+}
+.service-card h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.service-card p {
+    color: #555555;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
