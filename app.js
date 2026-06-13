@@ -63,3 +63,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }, observerOptions);
         skillsObserver.observe(skillsSection);
     }
+    const filterButtons = document.querySelectorAll('#projectsFilters .filter-btn');
+    const projectCards = document.querySelectorAll('#projectsGrid .project-card');
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(button => button.classList.remove('active'));
+            btn.classList.add('active');
+            const category = btn.getAttribute('data-category');
+            projectCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'all' || category === cardCategory) {
+                    card.classList.remove('hide');
+                    card.classList.remove('fade-in');
+                    void card.offsetWidth;
+                    card.classList.add('fade-in');
+                } else {
+                    card.classList.add('hide');
+                    card.classList.remove('fade-in');
+                }
+            });
+        });
+    });
