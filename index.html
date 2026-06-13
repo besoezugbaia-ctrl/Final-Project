@@ -1,106 +1,121 @@
 <!DOCTYPE html>
 <html lang="ka">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="აბესალომ ეზუგბაია - პირადი რეზიუმე და პორტფოლიო. UI/UX დიზაინერი და ვებ დეველოპერი.">
-        <meta name="keywords" content="აბესალომ ეზუგბაია, რეზიუმე, პორტფოლიო, UI/UX, ვებ დიზაინი, ვებ დეველოპერი, ქართველი დეველოპერი">
-        <meta name="author" content="აბესალომ ეზუგბაია">
-        <title>აბესალომ ეზუგბაია | პორტფოლიო & რეზიუმე</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header">
-            <div class="container header-container">
-                <a href="#home" class="logo">
-                    <span>A</span>besalom.E
-                </a>
-
-                <nav class="nav-menu" id="naveMenu">
-                    <a href="#home" class="nav-link active">მთავარი</a>
-                    <a href="#about" class="nav-link">ჩემ შესახებ</a>
-                    <a href="#services" class="nav-link">სერვისები</a>
-                    <a href="projects" class="nav-link">პროექტები</a>
-                    <a href="#testimonials" class="nav-link">შეფასებები</a>
-                    <a href="#conacts" class="nav-link">კონტაქტი</a>
-                    <a href="#assets/user.jpg" download="Abesalom_Ezugbaia_CV.jpg" class="btn-cv-mobile">ჩამოტვირთე</a>
-                </nav>
-                <div class="header-actions">
-                    <a href="assets/user.jpg" download="Abesalom_Ezugbaia_CV.jpg" class="btn-cv-mobile">ჩამოტვირთე</a>
-                    <button class="hamburger" id="hamburgerBtn" aria-label="მენიუს გახსნა">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="აბესალომ ეზუგბაია - პირადი რეზიუმე და პორტფოლიო. UI/UX დიზაინერი და ვებ დეველოპერი.">
+    <meta name="keywords" content="აბესალომ ეზუგბაია, რეზიუმე, პორტფოლიო, UI/UX, ვებ დიზაინი, ვებ დეველოპერი, ქართველი დეველოპერი">
+    <meta name="author" content="აბესალომ ეზუგბაია">
+    <title>აბესალომ ეზუგბაია | პორტფოლიო & რეზიუმე</title>
+    <!-- Google Fonts: Outfit and Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <span>A</span>besalom.E
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">მთავარი</a>
+                <a href="#about" class="nav-link">ჩემ შესახებ</a>
+                <a href="#services" class="nav-link">სერვისები</a>
+                <a href="#projects" class="nav-link">პროექტები</a>
+                <a href="#testimonials" class="nav-link">შეფასებები</a>
+                <a href="#contact" class="nav-link">კონტაქტი</a>
+                <a href="assets/user.jpg" download="Abesalom_Ezugbaia_CV.jpg" class="btn btn-cv-mobile">ჩამოტვირთე CV</a>
+            </nav>
+            <div class="header-actions">
+                <a href="assets/user.jpg" download="Abesalom_Ezugbaia_CV.jpg" class="btn btn-primary btn-cv">ჩამოტვირთე CV</a>
+                <button class="hamburger" id="hamburgerBtn" aria-label="მენიუს გახსნა">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-        </header>
-        <main>
-            <section id="home" class="hero-section">
-               <div class="container hero-container">
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Slider Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
                 <div class="hero-content">
                     <span class="hero-welcome">გამარჯობა, მე ვარ</span>
                     <h1 class="hero-name">აბესალომ ეზუგბაია</h1>
                     <h2 class="hero-title">UI & UX <br><span class="highlight">Designer</span> & Dev</h2>
                     <p class="hero-desc">
-                        ვქმნი თანამედროვე, დახვეწილ და მომხმარებეკზე ორიენტირებულ ციფრულ პროდუქტებს.ჩემი მიზანია ტექნოლოგეიბისა და დიზაინის იდეალური სინტეზი.
+                        ვქმნი თანამედროვე, დახვეწილ და მომხმარებელზე ორიენტირებულ ციფრულ პროდუქტებს. ჩემი მიზანია ტექნოლოგიებისა და დიზაინის იდეალური სინთეზი.
                     </p>
                     <div class="hero-actions-group">
                         <a href="#contact" class="btn btn-primary">დამიკავშირდით</a>
-                        <div class="social-link">
-                            <a href="https://facebook.com" target="_blank" rel="nooper" aria-label="facebook">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="curretColor">
+                        <div class="social-links">
+                            <!-- Facebook -->
+                            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
                                 </svg>
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="nooper" aria-label="twitter">
+                            <!-- Twitter / X -->
+                            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                                 </svg>
-                            </a>  
-                            <a href="https://instagram.com" target="_blank" rel="nooper" aria-label="instagram">
+                            </a>
+                            <!-- Instagram -->
+                            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                                 </svg>
-                            </a> 
-                            <a href="https://linkedin.com" target="_blank" rel="nooper" aria-label="linkedin">
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                                 </svg>
                             </a>
-                            <a href="https://github.com" target="_blank" rel="nooper" aria-label="github">
+                            <!-- GitHub -->
+                            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
                                 </svg>
-                            </a>      
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
                     <div class="hero-image-container">
+                        <!-- Automatic Image Slider -->
                         <div class="slider-image-track" id="heroSlider">
                             <img src="assets/user.jpg" alt="აბესალომ ეზუგბაია" class="slide active">
                             <img src="assets/slide2.png" alt="აბესალომ ეზუგბაია სამუშაო გარემო 1" class="slide">
                             <img src="assets/slide3.png" alt="აბესალომ ეზუგბაია სამუშაო გარემო 2" class="slide">
                         </div>
                     </div>
-                 </div>
-               </div> 
-            </section>
-            <section id="about" class="about-section">
-                <div class="Container about-container">
-                    <div class="about-image-wrapper">
-                        <img src="assets/user.jpg" alt="აბესალომ ეზუგბაია" class="about-img">
-                    </div>
-                    <div class="about-content">
-                        <h2 class="section-title">ჩემ შესახებ</h2>
-                        <P class="about-text">
-                            მე ვარ აბესალომ ეზუგბაია, პროფესიონალი UI/UX დიზაინერი და ვებ დეველოპერი. ჩემი გამოცდილება მოიცავს ვებ-აპლიკაციების ინტერფეისების დაგეგმვას, მომხმაებლის გამოცდილების (UX) კვლევას და თანამედროვე ვებ-ტექნოლოგიებით მათ რეალობად ქცევას.მუდმივად ვცდილობ ვიყო ინობაციების სათავეში და ჩემს პროექტებში გამოვიყენო საუკეთესო პრაქტიკა. 
-                        </P>
-                        <div class="skills-wrapper" id="skillsSection">
-                            <div class="skill-item">
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image-wrapper">
+                    <img src="assets/user.jpg" alt="აბესალომ ეზუგბაია" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">ჩემ შესახებ</h2>
+                    <p class="about-text">
+                        მე ვარ აბესალომ ეზუგბაია, პროფესიონალი UI/UX დიზაინერი და ვებ დეველოპერი. ჩემი გამოცდილება მოიცავს ვებ-აპლიკაციების ინტერფეისების დაგეგმვას, მომხმარებლის გამოცდილების (UX) კვლევას და თანამედროვე ვებ-ტექნოლოგიებით მათ რეალობად ქცევას. მუდმივად ვცდილობ ვიყო ინოვაციების სათავეში და ჩემს პროექტებში გამოვიყენო საუკეთესო პრაქტიკა.
+                    </p>
+                    <!-- Skills & Progress Bars -->
+                    <div class="skills-wrapper" id="skillsSection">
+                        <div class="skill-item">
+                            <div class="skill-info">
                                 <span class="skill-name">UX Design</span>
                                 <span class="skill-percent">90%</span>
                             </div>
@@ -117,28 +132,30 @@
                                 <div class="progress-fill" data-width="85%"></div>
                             </div>
                         </div>
-                        <div class="skill-item"></div>
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">App Design</span>
                                 <span class="skill-percent">80%</span>
-                            </div> 
+                            </div>
                             <div class="progress-bar">
-                                <div class="progress-fill" data-width="85%"></div>
+                                <div class="progress-fill" data-width="80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item"></div>
+                        <div class="skill-item">
                             <div class="skill-info">
                                 <span class="skill-name">Graphic Design</span>
                                 <span class="skill-percent">75%</span>
                             </div>
                             <div class="progress-bar">
-                                <div class="progress-fill" data-width="85%"></div> 
-                            </div>  
+                                <div class="progress-fill" data-width="75%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section id="services" class="services-section">
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section id="services" class="services-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title text-center">სერვისები</h2>
@@ -147,6 +164,7 @@
                     </p>
                 </div>
                 <div class="services-grid">
+                    <!-- Service 1: UI/UX -->
                     <div class="service-card">
                         <div class="service-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -156,6 +174,7 @@
                         <h3>UI/UX დიზაინი</h3>
                         <p>მავთულხლართების (wireframes) და პროტოტიპების შექმნა, მომხმარებელზე მორგებული ინტერფეისების დაგეგმვა.</p>
                     </div>
+                    <!-- Service 2: Web Design -->
                     <div class="service-card">
                         <div class="service-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -165,6 +184,7 @@
                         <h3>ვებ დიზაინი</h3>
                         <p>თანამედროვე, სუფთა და უნიკალური ვებ-გვერდების ვიზუალური დიზაინის შექმნა და ბრენდინგი.</p>
                     </div>
+                    <!-- Service 3: App Design -->
                     <div class="service-card">
                         <div class="service-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -174,6 +194,7 @@
                         <h3>მობილური აპლიკაციები</h3>
                         <p>iOS და Android პლატფორმებისთვის მოსახერხებელი და დახვეწილი აპლიკაციების ინტერფეისის დიზაინი.</p>
                     </div>
+                    <!-- Service 4: Graphic Design -->
                     <div class="service-card">
                         <div class="service-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -185,8 +206,9 @@
                     </div>
                 </div>
             </div>
-            </section>
-            <section id="projects" class="projects-section">
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title text-center">ჩემი პროექტები</h2>
@@ -194,6 +216,7 @@
                         იხილეთ ჩემი ბოლოდროინდელი ნამუშევრები, რომლებიც დაყოფილია კატეგორიებად.
                     </p>
                 </div>
+                <!-- Category Filters -->
                 <div class="filters-group" id="projectsFilters">
                     <button class="filter-btn active" data-category="all">ყველა</button>
                     <button class="filter-btn" data-category="uiux">UI/UX</button>
@@ -201,7 +224,9 @@
                     <button class="filter-btn" data-category="appdesign">აპლიკაციები</button>
                     <button class="filter-btn" data-category="graphicdesign">გრაფიკა</button>
                 </div>
+                <!-- Projects Grid -->
                 <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1 (UI/UX) -->
                     <div class="project-card" data-category="uiux">
                         <div class="project-img-wrapper">
                             <img src="assets/project1.png" alt="SaaS პლატფორმის დიზაინი" class="project-img">
@@ -211,6 +236,7 @@
                             <h3 class="project-name">SaaS ანალიტიკის მართვის პანელი</h3>
                         </div>
                     </div>
+                    <!-- Project 2 (Web Design) -->
                     <div class="project-card" data-category="webdesign">
                         <div class="project-img-wrapper">
                             <img src="assets/project2.png" alt="ელ-კომერციის ვებ-გვერდი" class="project-img">
@@ -220,6 +246,7 @@
                             <h3 class="project-name">E-commerce ონლაინ მაღაზია</h3>
                         </div>
                     </div>
+                    <!-- Project 3 (App Design) -->
                     <div class="project-card" data-category="appdesign">
                         <div class="project-img-wrapper">
                             <img src="assets/project3.png" alt="ჭკვიანი სახლის მართვის აპლიკაცია" class="project-img">
@@ -229,6 +256,7 @@
                             <h3 class="project-name">Smart Home კონტროლის აპლიკაცია</h3>
                         </div>
                     </div>
+                    <!-- Project 4 (Graphic Design) -->
                     <div class="project-card" data-category="graphicdesign">
                         <div class="project-img-wrapper">
                             <img src="assets/project4.png" alt="აბსტრაქტული ბრენდინგის პოსტერი" class="project-img">
@@ -240,134 +268,146 @@
                     </div>
                 </div>
             </div>
-            </section>
-            <section id="testimonials" class="testimonials-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title text-center">რეკომენდაციები</h2>
-                        <p class="section-subtitle text-center">
-                            რას ამბობენ მომხმარებლები ჩემთან თანამშრომლობის შესახებ.
-                        </p>
+        </section>
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-center">რეკომენდაციები</h2>
+                    <p class="section-subtitle text-center">
+                        რას ამბობენ მომხმარებლები ჩემთან თანამშრომლობის შესახებ.
+                    </p>
+                </div>
+                <!-- Testimonial Slider Container -->
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-card" id="testimonialCard">
+                        <div class="testimonial-img-wrapper">
+                            <!-- In js we will change this source -->
+                            <img src="assets/user.jpg" alt="რეკომენდატორი" class="testimonial-avatar" id="testimonialAvatar">
+                        </div>
+                        <div class="testimonial-content">
+                            <span class="quote-icon">“</span>
+                            <p class="testimonial-quote" id="testimonialText">
+                                აბესალომი არის შესანიშნავი პროფესიონალი. მან ჩვენი იდეები აქცია მომხიბვლელ და სრულად ფუნქციურ ციფრულ პლატფორმად. მისი პასუხისმგებლობის გრძნობა და დეტალებზე ორიენტირებულობა უმაღლეს დონეზეა.
+                            </p>
+                            <h4 class="testimonial-author" id="testimonialAuthor">ირაკლი კობახიძე</h4>
+                            <span class="testimonial-role" id="testimonialRole">ტექნიკური დირექტორი, TechGroup</span>
+                        </div>
                     </div>
-                    <div class="testimonial-slider-container">
-                        <div class="testimonial-card" id="testimonialCard">
-                            <div class="testimonial-img-wrapper">
-                                <img src="assets/user.jpg" alt="რეკომენდატორი" class="testimonial-avatar" id="testimonialAvatar">
-                            </div>
-                            <div class="testimonial-content">
-                                <span class="quote-icon">“</span>
-                                <p class="testimonial-quote" id="testimonialText">
-                                    აბესალომი არის შესანიშნავი პროფესიონალი. მან ჩვენი იდეები აქცია მომხიბვლელ და სრულად ფუნქციურ ციფრულ პლატფორმად. მისი პასუხისმგებლობის გრძნობა და დეტალებზე ორიენტირებულობა უმაღლეს დონეზეა.
-                                </p>
-                                <h4 class="testimonial-author" id="testimonialAuthor">ირაკლი კობახიძე</h4>
-                                <span class="testimonial-role" id="testimonialRole">ტექნიკური დირექტორი, TechGroup</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-dots" id="testimonialDots">
-                            <button class="dot-btn active" data-index="0" aria-label="სლაიდი 1"></button>
-                            <button class="dot-btn" data-index="1" aria-label="სლაიდი 2"></button>
-                            <button class="dot-btn" data-index="2" aria-label="სლაიდი 3"></button>
-                            <button class="dot-btn" data-index="3" aria-label="სლაიდი 4"></button>
-                        </div>
+                    <!-- Dots Navigation -->
+                    <div class="testimonial-dots" id="testimonialDots">
+                        <button class="dot-btn active" data-index="0" aria-label="სლაიდი 1"></button>
+                        <button class="dot-btn" data-index="1" aria-label="სლაიდი 2"></button>
+                        <button class="dot-btn" data-index="2" aria-label="სლაიდი 3"></button>
+                        <button class="dot-btn" data-index="3" aria-label="სლაიდი 4"></button>
                     </div>
                 </div>
-            </section>
-            <section id="contact" class="contact-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title text-center">დამიკავშირდით</h2>
-                        <p class="section-subtitle text-center">
-                            გაქვთ საინტერესო პროექტი ან შემოთავაზება? მოგვწერეთ და გიპასუხებთ რაც შეიძლება მალე.
-                        </p>
-                    </div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" id="formName" name="name" placeholder="თქვენი სახელი" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="formEmail" name="email" placeholder="თქვენი ელ-ფოსტა" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="url" id="formWebsite" name="website" placeholder="თქვენი ვებ-საიტი (არასავალდებულო)">
-                            </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-center">დამიკავშირდით</h2>
+                    <p class="section-subtitle text-center">
+                        გაქვთ საინტერესო პროექტი ან შემოთავაზება? მოგვწერეთ და გიპასუხებთ რაც შეიძლება მალე.
+                    </p>
+                </div>
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="formName" name="name" placeholder="თქვენი სახელი" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="formMessage" name="message" rows="6" placeholder="თქვენი შეტყობინება" required></textarea>
+                            <input type="email" id="formEmail" name="email" placeholder="თქვენი ელ-ფოსტა" required>
                         </div>
-                        <div class="form-submit text-center">
-                            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
-                                <span class="btn-text">შეტყობინების გაგზავნა</span>
-                                <span class="loader" id="formLoader"></span>
-                            </button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="url" id="formWebsite" name="website" placeholder="თქვენი ვებ-საიტი (არასავალდებულო)">
                         </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container footer-container">
-                <a href="#home" class="logo">
-                    <span>A</span>besalom.E
-                </a>
-                
-                <nav class="footer-nav">
-                    <a href="#home">მთავარი</a>
-                    <a href="#about">ჩემ შესახებ</a>
-                    <a href="#services">სერვისები</a>
-                    <a href="#projects">პროექტები</a>
-                    <a href="#testimonials">შეფასებები</a>
-                    <a href="#contact">კონტაქტი</a>
-                </nav>
-                <div class="footer-socials">
-                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                        </svg>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                    </a>
-                </div>
-                
-                <p class="copyright">
-                    &copy; 2026 აბესალომ ეზუგბაია. ყველა უფლება დაცულია.
-                </p>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" name="message" rows="6" placeholder="თქვენი შეტყობინება" required></textarea>
+                    </div>
+                    <div class="form-submit text-center">
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span class="btn-text">შეტყობინების გაგზავნა</span>
+                            <span class="loader" id="formLoader"></span>
+                        </button>
+                    </div>
+                </form>
             </div>
-        </footer>
-        <div class="modal-backdrop" id="successModal">
-            <div class="modal">
-                <button class="modal-close" id="modalCloseBtn" aria-label="დახურვა">&times;</button>
-                <div class="modal-icon">
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="#home" class="logo">
+                <span>A</span>besalom.E
+            </a>
+            
+            <nav class="footer-nav">
+                <a href="#home">მთავარი</a>
+                <a href="#about">ჩემ შესახებ</a>
+                <a href="#services">სერვისები</a>
+                <a href="#projects">პროექტები</a>
+                <a href="#testimonials">შეფასებები</a>
+                <a href="#contact">კონტაქტი</a>
+            </nav>
+            <div class="footer-socials">
+                <!-- Facebook -->
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
                     </svg>
-                </div>
+                </a>
+                <!-- Twitter / X -->
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="copyright">
+                &copy; 2026 აბესალომ ეზუგბაია. ყველა უფლება დაცულია.
+            </p>
+        </div>
+    </footer>
+    <!-- Success Modal -->
+    <div class="modal-backdrop" id="successModal">
+        <div class="modal">
+            <button class="modal-close" id="modalCloseBtn" aria-label="დახურვა">&times;</button>
+            <div class="modal-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+            </div>
             <h3 class="modal-title">გაგზავნილია!</h3>
             <p class="modal-text">Thank you for getting in touch! We appreciate you contacting us.</p>
             <button class="btn btn-primary" id="modalOkBtn">კარგი</button>
-            </div>
         </div>
-        <script src="app.js"></script>
-    </body>
-
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
