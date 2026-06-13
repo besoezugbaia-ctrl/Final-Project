@@ -737,3 +737,55 @@ img {
 .btn-submit.loading .loader {
     display: inline-block;
 }
+.footer {
+    padding: 60px 0 30px 0;
+    background-color: var(--bg-deep);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.footer-nav {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-nav a {
+    font-size: 0.95rem;
+    color: var(--text-white);
+}
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    color: var(--text-white);
+    transition: var(--transition-normal);
+}
+.footer-socials a svg {
+    width: 18px;
+    height: 18px;
+}
+.footer-socials a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+.copyright {
+    color: var(--text-grey);
+    font-size: 0.85rem;
+    text-align: center;
+}
